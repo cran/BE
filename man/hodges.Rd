@@ -16,19 +16,19 @@ hodges(bedata, Var)
  TRT : Treatment or Drug, 'R' or 'T'
 }
   }
-  \item{Var}{Variable to be estimated. This should be one of the column names in bedata table. Usually 'Tmax'}
+  \item{Var}{Variable to be estimated. This should be one of the column names in \code{bedata} table. Usually 'Tmax'}
 }
 \details{
   It nonparametrically tests \code{Var} variable equivalency from a 2x2 study. This is done for a variable which we cannot assume log-normal distribution. 
 }
 \value{
   \item{Wilcoxon Signed-Rank Test}{A kind of nonparametric test}
-  \item{Hodges-Lehmann Estimate}{90\% confidence interval in orginal scale and percent scale}
+  \item{Hodges-Lehmann Estimate}{90\% confidence interval in the original scale and the percent scale}
 }
 \author{Kyun-Seop Bae <k@acr.kr>}
 
 \examples{
-  hodges(NCAResult4BE, "Tmax") 
+hodges(NCAResult4BE, "Tmax") 
 }
 
 \keyword{Statistical Test}

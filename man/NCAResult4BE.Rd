@@ -5,9 +5,11 @@
   An Example of Noncompartmental Analysis Result for Bioequivalence Test
 }
 \description{
-  Contains Noncompartmental analysis result data from a concentration simulated bioequivalence study. 
+  Contains a noncompartmental analysis result table from a concentration simulated bioequivalence study. 
 }
-\usage{RptCfg}
+\usage{
+NCAResult4BE
+}
 \format{
   A data frame with 48 observations on the following 10 variables.
   \describe{
@@ -23,5 +25,4 @@
 \details{
   This contains a simulated data for 2x2 bioequivalence study data analysis. Noncompartmental analysis results are from the \code{NonCompart} package. 
 }
-
 \keyword{datasets}

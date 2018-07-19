@@ -41,6 +41,6 @@ powcv(n, CV, DesignNo = 1, True.R = 1, Alpha = 0.1, ThetaL = 0.8, ThetaU = 1.25)
 }
 \author{Kyun-Seop Bae <k@acr.kr>}
 \examples{
-  powcv(12, 25) 
+powcv(12, 25) 
 }
 \keyword{Power}

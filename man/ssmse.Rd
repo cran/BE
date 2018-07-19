@@ -43,6 +43,6 @@ ssmse(mse, DesignNo = 1, True.R = 1, Alpha = 0.1, Beta = 0.2,
 }
 \author{Kyun-Seop Bae <k@acr.kr>}
 \examples{
-  ssmse(0.06)
+ssmse(0.06)
 }
 \keyword{Sample Size}

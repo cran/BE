@@ -24,6 +24,6 @@ pow2x2mse(n1, n2, mse, True.R = 1, Alpha = 0.1, ThetaL = 0.8, ThetaU = 1.25)
 }
 \author{Kyun-Seop Bae <k@acr.kr>}
 \examples{
-  pow2x2mse(12, 13, 0.0756530) 
+pow2x2mse(12, 13, 0.0756530) 
 }
 \keyword{Power}

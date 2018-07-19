@@ -16,7 +16,7 @@ plot2x2(bedata, Var)
  TRT : Treatment or Drug, 'R' or 'T'
 }
   }
-  \item{Var}{Variable to be plotted. This should be one of the column names in bedata table.}
+  \item{Var}{Variable to be plotted. This should be one of the column names in \code{bedata} table.}
 }
 \details{
   It plots \code{Var} column values according to GRP, PRD, TRT.
@@ -26,8 +26,8 @@ plot2x2(bedata, Var)
 }
 \author{Kyun-Seop Bae <k@acr.kr>}
 \examples{
-  plot2x2(NCAResult4BE, "AUClast")
-  plot2x2(NCAResult4BE, "Cmax")
-  plot2x2(NCAResult4BE, "Tmax")
+plot2x2(NCAResult4BE, "AUClast")
+plot2x2(NCAResult4BE, "Cmax")
+plot2x2(NCAResult4BE, "Tmax")
 }
 \keyword{Plot}

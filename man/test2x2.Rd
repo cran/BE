@@ -2,7 +2,7 @@
 \alias{test2x2}
 \title{Bioequivalence test for a variable of a 2x2 study}
 \description{
-  It performs conventional bioequivalence test for 2x2 study. Basic assumption is that the variable is distributed as log-normal distribution. This is SAS PROC GLM style. If you want PROC MIXED style use \code{nlme:lme}.
+  It performs conventional bioequivalence test for 2x2 study. Basic assumption is that the variable is distributed as a log-normal distribution. This is SAS PROC GLM style. If you want PROC MIXED style use \code{nlme::lme}.
 }
 \usage{
 test2x2(bedata, Var)
@@ -16,23 +16,23 @@ test2x2(bedata, Var)
  TRT : Treatment or Drug, 'R' or 'T'
 }
   }
-  \item{Var}{Variable to be tested. This should be one of the column names in bedata table. Usually 'AUClast' or 'Cmax'}
+  \item{Var}{Variable to be tested. This should be one of the column names in \code{bedata} table. Usually 'AUClast' or 'Cmax'}
 }
 \details{
-  It tests \code{Var} variable equivalency from a 2x2 study. Current regulatory requirements is 90\% confidence interval of gemotric mean ratio (Test/Reference) should be within [0.8, 1.25]. 
+  It tests \code{Var} variable equivalency from a 2x2 study. Current regulatory requirement is that the 90\% confidence interval of geometric mean ratio (Test/Reference) should be within [0.8, 1.25]. 
 }
 \value{
   \item{Analysis of Variance (log scale)}{Analysis of Variance in log scale}
-  \item{Betwwen and Within Subject Variability}{Variance in log scale and coefficient of variance in original scale}
-  \item{Least Square Means}{Geomtric means}
+  \item{Between and Within Subject Variability}{Variance in log scale and coefficient of variance in original scale}
+  \item{Least Square Means}{Geometric means}
   \item{90\% Confidence Interval}{90\% confidence interval of geometric mean ratio (T/R)}
   \item{Sample Size}{Sample size for the replication of this study}
 }
 \author{Kyun-Seop Bae <k@acr.kr>}
 
 \examples{
-  print(test2x2(NCAResult4BE, "AUClast"), na.print="") 
-  print(test2x2(NCAResult4BE, "Cmax"), na.print="") 
+print(test2x2(NCAResult4BE, "AUClast"), na.print="") 
+print(test2x2(NCAResult4BE, "Cmax"), na.print="") 
 }
 
 \keyword{Statistical Test}

@@ -43,6 +43,6 @@ sscv(CV, DesignNo = 1, True.R = 1, Alpha = 0.1, Beta = 0.2,
 }
 \author{Kyun-Seop Bae <k@acr.kr>}
 \examples{
-  sscv(25)
+sscv(25)
 }
 \keyword{Sample Size}

@@ -41,6 +41,6 @@ powmse(n, mse, DesignNo = 1, True.R = 1, Alpha = 0.1, ThetaL = 0.8, ThetaU = 1.2
 }
 \author{Kyun-Seop Bae <k@acr.kr>}
 \examples{
-  powmse(12, 0.06)
+powmse(12, 0.06)
 }
 \keyword{Power}
