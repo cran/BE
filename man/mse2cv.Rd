@@ -16,7 +16,7 @@ mse2cv(mse)
 \value{
 Returns coefficient of variation (CV) in percent (\%).
 }
-\author{Kyun-Seop Bae <k@acr.kr>}
+\author{Kyun-Seop Bae k@acr.kr}
 \examples{
 mse2cv(0.06062462) 
 }

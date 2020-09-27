@@ -24,7 +24,7 @@ plot2x2(bedata, Var)
 \value{
   It just draws two 2x2 plots for equivalence exploration.
 }
-\author{Kyun-Seop Bae <k@acr.kr>}
+\author{Kyun-Seop Bae k@acr.kr}
 \examples{
 plot2x2(NCAResult4BE, "AUClast")
 plot2x2(NCAResult4BE, "Cmax")

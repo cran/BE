@@ -20,7 +20,7 @@ ci2mse(n1, n2, LL, UL, Alpha = 0.1)
 \value{
 Returns mean squared error (MSE).
 }
-\author{Kyun-Seop Bae <k@acr.kr>}
+\author{Kyun-Seop Bae k@acr.kr}
 \examples{
 ci2mse(12, 13, 0.85, 1.11) 
 }

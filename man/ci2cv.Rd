@@ -20,7 +20,7 @@ ci2cv(n1, n2, LL, UL, Alpha = 0.1)
 \value{
 Returns coefficient of variation (CV) in percent (\%).
 }
-\author{Kyun-Seop Bae <k@acr.kr>}
+\author{Kyun-Seop Bae k@acr.kr}
 \examples{
 ci2cv(12, 13, 0.85, 1.11) 
 }

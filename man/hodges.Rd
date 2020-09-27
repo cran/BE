@@ -25,7 +25,7 @@ hodges(bedata, Var)
   \item{Wilcoxon Signed-Rank Test}{A kind of nonparametric test}
   \item{Hodges-Lehmann Estimate}{90\% confidence interval in the original scale and the percent scale}
 }
-\author{Kyun-Seop Bae <k@acr.kr>}
+\author{Kyun-Seop Bae k@acr.kr}
 
 \examples{
 hodges(NCAResult4BE, "Tmax") 

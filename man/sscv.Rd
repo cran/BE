@@ -13,18 +13,20 @@ sscv(CV, DesignNo = 1, True.R = 1, Alpha = 0.1, Beta = 0.2,
   \item{DesignNo}{Crossover design number.  
 \preformatted{  
  Design Number (treatment x sequence x period)
- 1 2x2x2 : RT TR
- 2 2x4x2 (Balaam Design) : TT RR RT TR 
- 3 2x2x3 (Two-sequence Dual Design): TRR RTT 
- 4 2x2x4 : TRRT RTTR
- 5 2x4x4 : TTRR RRTT TRRT RTTR
- 6 3x6x3 (William Design for 3 treatments) + carry-over effect 
+ 1 2x2x2 : RT TR (no carry-over)
+ 2 2x4x2 (Balaam Design) : TT RR RT TR (no carry-over)
+ 3 2x2x3 (Two-sequence Dual Design): TRR RTT (no carry-over)
+ 4 2x3x3 : TRR RTR RRT - carry-over effect
+ 5 2x2x4c : TRRT RTTR + carry-over effect
+ 6 2x2x4 : TRRT RTTR - carry-over effect
+ 7 2x4x4 : TTRR RRTT TRRT RTTR
+ 8 3x6x3c (William Design for 3 treatments) + carry-over effect 
          : RBA ARB BAR ABR BRA RAB
- 7 3x6x3 (William Design for 3 treatments) - carry-over effect 
+ 9 3x6x3 (William Design for 3 treatments) - carry-over effect 
          : RBA ARB BAR ABR BRA RAB
- 8 4x4x4 (William Design for 4 treatments) + carry-over effect 
+ 10 4x4x4c (William Design for 4 treatments) + carry-over effect 
          : RCAB ARBC BACR CBRA
- 9 4x4x4 (William Design for 4 treatments) - carry-over effect 
+ 11 4x4x4 (William Design for 4 treatments) - carry-over effect 
          : RCAB ARBC BACR CBRA 
 }  
   }
@@ -41,7 +43,7 @@ sscv(CV, DesignNo = 1, True.R = 1, Alpha = 0.1, Beta = 0.2,
 \value{
   Returns sample size (n per group) for bioequivalence test with ratio criteria.
 }
-\author{Kyun-Seop Bae <k@acr.kr>}
+\author{Kyun-Seop Bae k@acr.kr}
 \examples{
 sscv(25)
 }

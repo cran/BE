@@ -20,7 +20,7 @@ pow2x2ci(n1, n2, LL, UL, Alpha = 0.1)
 \value{
   Returns power [0, 1)
 }
-\author{Kyun-Seop Bae <k@acr.kr>}
+\author{Kyun-Seop Bae k@acr.kr}
 \examples{
 pow2x2ci(12, 13, 0.85, 1.11) 
 }

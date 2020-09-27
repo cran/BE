@@ -2,9 +2,9 @@ powmse = function(n, mse, DesignNo=1, True.R=1, Alpha=0.1, ThetaL=0.8, ThetaU=1.
 {
   if (True.R <= ThetaL | True.R >= ThetaU) return(0)
 
-  aNu0 = c(2, 4, 4, 6, 12, 12, 12, 12, 12)
-  aNu1 = c(2, 3, 4, 5, 5, 6, 4, 9, 6)
-  aBx = c(1, 2, 3/4, 11/20, 1/4, 5/12, 1/3, 11/20, 1/2)
+  aNu0 = c(2, 4, 4, 4, 6, 6, 12, 12, 12, 12, 12)
+  aNu1 = c(2, 3, 4, 3, 5, 4, 5, 6, 4, 9, 6)
+  aBx = c(1, 2, 3/4, 1/2, 11/20, 1/2, 1/4, 5/12, 1/3, 11/20, 1/2)
 
   nu = aNu0[DesignNo]*n - aNu1[DesignNo]
   bx = sqrt(mse*aBx[DesignNo]/n)

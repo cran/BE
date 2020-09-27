@@ -20,7 +20,7 @@ ss2x2ci(n1, n2, LL, UL, Alpha = 0.1)
 \value{
   Returns sample size (n per group) for bioequivalence test with ratio criteria.
 }
-\author{Kyun-Seop Bae <k@acr.kr>}
+\author{Kyun-Seop Bae k@acr.kr}
 \examples{
 ss2x2ci(12, 13, 0.85, 1.11) 
 }

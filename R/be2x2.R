@@ -10,7 +10,7 @@ be2x2 = function(Data, Columns = c("AUClast", "Cmax", "Tmax"), rtfName="")
 
   bedata = bedata[order(bedata$GRP, bedata$PRD, bedata$SUBJ),];
   if(!assert(bedata)) {
-    cat("\n Subject count should be balanced!\n");
+    cat("\n Drop-outed subjects should not be included!\n");
     return(NULL);
   }
 

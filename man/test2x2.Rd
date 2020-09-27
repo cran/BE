@@ -28,11 +28,11 @@ test2x2(bedata, Var)
   \item{90\% Confidence Interval}{90\% confidence interval of geometric mean ratio (T/R)}
   \item{Sample Size}{Sample size for the replication of this study}
 }
-\author{Kyun-Seop Bae <k@acr.kr>}
+\author{Kyun-Seop Bae k@acr.kr}
 
 \examples{
-print(test2x2(NCAResult4BE, "AUClast"), na.print="") 
-print(test2x2(NCAResult4BE, "Cmax"), na.print="") 
+  test2x2(NCAResult4BE, "AUClast")
+  test2x2(NCAResult4BE, "Cmax")
 }
 
 \keyword{Statistical Test}

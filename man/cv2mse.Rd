@@ -16,7 +16,7 @@ cv2mse(cv)
 \value{
 Returns mean squared error (MSE) in log scale).
 }
-\author{Kyun-Seop Bae <k@acr.kr>}
+\author{Kyun-Seop Bae k@acr.kr}
 \examples{
 cv2mse(25) 
 }

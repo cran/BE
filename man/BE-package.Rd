@@ -10,7 +10,7 @@
 \details{
   It performs bioequivalency tests for several variables of a 2x2 study in a data file. 
 }
-\author{Kyun-Seop Bae <k@acr.kr>}
+\author{Kyun-Seop Bae k@acr.kr}
 \references{
   \enumerate{
   \item Chow SC, Liu JP. Design and Analysis of Bioavailability and Bioequivalence Studies. 3rd ed. (2009, ISBN:978-1-58488-668-6)
@@ -19,6 +19,24 @@
   }
 }
 \examples{
-write.csv(NCAResult4BE, "temp.csv", quote=FALSE, row.names=FALSE)
-print(be2x2("temp.csv", c("AUClast", "Cmax", "Tmax")), na.print="") 
+# write.csv(NCAResult4BE, "temp.csv", quote=FALSE, row.names=FALSE)
+# be2x2("temp.csv", c("AUClast", "Cmax", "Tmax"))
+
+## 'nlme' or SAS PROC MIXED is preferred for the confidence interval
+
+## SAS PROC MIXED equivalent
+# require(nlme)
+# r2 = lme(log(Cmax) ~ GRP + PRD + TRT, random=~1|SUBJ, data=BEdata)
+# summary(r2)
+# VarCorr(r2)
+# ci = intervals(r2, 0.90) ; ci 
+# exp(ci$fixed["TRTT",])
+
+## SAS PROC GLM equivalent
+# require(sasLM) # includes 'BEdata' which is a real dataset
+# BEdata = af(BEdata, c("SEQ", "SUBJ", "PRD", "TRT")) # Columns as factor
+# formula1 = log(CMAX) ~ SEQ/SUBJ + PRD + TRT # Model
+# GLM(formula1, BEdata) # ANOVA tables of Type I, II, III SS
+# T3MS(formula1, BEdata) # EMS table
+# T3test(formula1, BEdata, Error="SEQ:SUBJ") # Hypothesis test
 }
