@@ -10,7 +10,7 @@ be2x2 = function(Data, Columns = c("AUClast", "Cmax", "Tmax"), rtfName="")
 
   bedata = bedata[order(bedata$GRP, bedata$PRD, bedata$SUBJ),];
   if(!assert(bedata)) {
-    cat("\n Drop-outed subjects should not be included!\n");
+    cat("\n Subject count should be balanced!\n");
     return(NULL);
   }
 
@@ -38,7 +38,7 @@ be2x2 = function(Data, Columns = c("AUClast", "Cmax", "Tmax"), rtfName="")
     if (rtfName != "") {
       addPageBreak(rtf)
       addHeader(rtf, title=Columns[i], TOC.level=1)
-      LineResult = capture.output(print(cResult, na.print=""))
+      LineResult = capture.output(print(cResult))
       for (j in 1:length(LineResult)) addParagraph(rtf, LineResult[j])
       addPageBreak(rtf)
       addPlot(rtf, plot.fun=plot2x2a, width=6.5, height=6.5, res=300, bedata=bedata, Var=Columns[i])

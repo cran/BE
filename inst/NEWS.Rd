@@ -1,6 +1,18 @@
 \name{NEWS}
 \title{News for Package \pkg{BE}}
 
+\section{Version 0.1.3 (2021-06-21)}{
+  \itemize{
+    \item{Minor update due to the upgrading of R system}
+  }
+}
+
+\section{Version 0.1.2 (2020-09-24)}{
+  \itemize{
+    \item{2x3x3 design is supported. See the help of \code{powmse}.}
+  }
+}
+
 \section{Version 0.1.1 (2018-07-18)}{
   \itemize{
     \item{\code{be2x2} supports output to be saved in a rtf file}

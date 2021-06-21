@@ -1,7 +1,7 @@
 test2x2 = function(bedata, Var)
 {
   if(!assert(bedata)) {
-    cat("\n Drop-outed subjects should not be included!\n");
+    cat("\n Subject count should be balanced!\n");
     return(NULL);
   }
 
@@ -65,9 +65,8 @@ test2x2 = function(bedata, Var)
   p  = c(p1, p2, p3, p4, p5, NA, NA)
   Fv[6] = Fv[7] = MS[7] = NA
 
-  ANOVA = cbind(DF, SS, MS, Fv, p)
-  dimnames(ANOVA) = list(Source, c("Df", "Sum Sq", "Mean Sq", "F value", "Pr(>F)"))
-  class(ANOVA) = "anova"
+  ANOVA = cbind(SS, DF, MS, Fv, p)
+  dimnames(ANOVA) = list(Source,c("Sum of Sq", "Df", "Mean Sq", "F value", "p(>F)"))
 
   pe = mu.t - mu.r
   se = sqrt(mse/2 * (1/n1 + 1/n2))   # See pp 62-63 of Chow & Liu
