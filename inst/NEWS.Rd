@@ -1,6 +1,12 @@
 \name{NEWS}
 \title{News for Package \pkg{BE}}
 
+\section{Version 0.1.4 (2021-11-16)}{
+  \itemize{
+    \item{Beutified ANOVA result in test2x2 and be2x2}
+  }
+}
+
 \section{Version 0.1.3 (2021-06-21)}{
   \itemize{
     \item{Minor update due to the upgrading of R system}

@@ -1,4 +1,4 @@
-e15f436b0c8070ea772cd5655ffac67e *DESCRIPTION
+f380bc54042759a1cc5bb841b28e9ba1 *DESCRIPTION
 f34c843d99273d79ded4edb6e3273c00 *NAMESPACE
 34645dba9f3f107c66ae1d147b28c13c *R/BasicUtil.R
 759c8e70b9c385acd59bb04f50270285 *R/be2x2.R
@@ -18,13 +18,13 @@ c9267bf8bacebae7f740d56fa1cd27dd *R/powmse.R
 363155e4c1f908c50cbb664fd9b3206b *R/sscv.R
 e7fe3268c2999bf50289bc681b28b43a *R/ssmse.R
 ab4b4f1071a6f90bee249d82a5e4ecf4 *R/sysdata.rda
-2693f335918ab9115e90a7ed175c6f1b *R/test2x2.R
-8a68dcaa432fa4e4a7049c6d51afae96 *inst/NEWS.Rd
-518a546cf42d31ef493c37abb9b5b266 *inst/doc/BE-manual.pdf
+11d8017088999c2520faa5521c07b452 *R/test2x2.R
+ec5120af06362264e9b24dd443b03e01 *inst/NEWS.Rd
+a25b4bd5d9b2126d88879a3b291b73bd *inst/doc/BE-manual.pdf
 1ec49eab24be27c4bb1ca14828524368 *man/BE-package.Rd
 bd2c483e742fb8b40658574693f171b2 *man/BasicUtil.Rd
 eca1691be7238f847f615b727ff4ba0d *man/NCAResult4BE.Rd
-28b7ecef65c5f82a6abdb17c89d7c031 *man/be2x2.Rd
+eb683c6f839fc3f397895e1eef8d24e8 *man/be2x2.Rd
 5c2bc31bb9e97ff663e6f51198b0b5f1 *man/ci2cv.Rd
 77c940eaf082f8438dd72a1a259f7763 *man/ci2mse.Rd
 bc8bc8fe51c0c16b5259e666fc9cf70b *man/cv2mse.Rd
@@ -40,4 +40,4 @@ f75097858d322ee6cb2cf73d3cf203c7 *man/mse2cv.Rd
 4822397b139fd6a97e590f4956a6e7c6 *man/ss2x2ci.Rd
 691bd6b616e4f7ff35abb212130ec583 *man/sscv.Rd
 0fe9a650e443972c9fa560d4a1f7d193 *man/ssmse.Rd
-d80991d4daa8bd38146db60205b82dde *man/test2x2.Rd
+8adb3acff4a6527d5801009459f42eb1 *man/test2x2.Rd

@@ -9,7 +9,7 @@ test2x2(bedata, Var)
 }
 \arguments{
   \item{bedata}{Data table name. This should have at least the following columns and a variable column to be tested. \code{Var} column values should be all positive values.
-\preformatted{  
+\preformatted{
  GRP : Group or Sequence, 'RT' or 'TR'
  PRD : Period, 1 or 2
  SUBJ : Subject ID
@@ -19,7 +19,7 @@ test2x2(bedata, Var)
   \item{Var}{Variable to be tested. This should be one of the column names in \code{bedata} table. Usually 'AUClast' or 'Cmax'}
 }
 \details{
-  It tests \code{Var} variable equivalency from a 2x2 study. Current regulatory requirement is that the 90\% confidence interval of geometric mean ratio (Test/Reference) should be within [0.8, 1.25]. 
+  It tests \code{Var} variable equivalency from a 2x2 study. Current regulatory requirement is that the 90\% confidence interval of geometric mean ratio (Test/Reference) should be within [0.8, 1.25].
 }
 \value{
   \item{Analysis of Variance (log scale)}{Analysis of Variance in log scale}
@@ -31,8 +31,8 @@ test2x2(bedata, Var)
 \author{Kyun-Seop Bae <k@acr.kr>}
 
 \examples{
-print(test2x2(NCAResult4BE, "AUClast"), na.print="") 
-print(test2x2(NCAResult4BE, "Cmax"), na.print="") 
+test2x2(NCAResult4BE, "AUClast")
+test2x2(NCAResult4BE, "Cmax")
 }
 
 \keyword{Statistical Test}

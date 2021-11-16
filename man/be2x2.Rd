@@ -28,6 +28,6 @@ be2x2(Data, Columns = c("AUClast", "Cmax", "Tmax"), rtfName="")
 \author{Kyun-Seop Bae <k@acr.kr>}
 \seealso{\code{\link{test2x2}}, \code{\link{plot2x2}}}
 \examples{
-print(be2x2(NCAResult4BE, c("AUClast", "Cmax", "Tmax")), na.print="") 
+be2x2(NCAResult4BE, c("AUClast", "Cmax", "Tmax"))
 }
 \keyword{Report}

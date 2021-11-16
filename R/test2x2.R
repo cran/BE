@@ -67,6 +67,7 @@ test2x2 = function(bedata, Var)
 
   ANOVA = cbind(SS, DF, MS, Fv, p)
   dimnames(ANOVA) = list(Source,c("Sum of Sq", "Df", "Mean Sq", "F value", "p(>F)"))
+  class(ANOVA) = "anova"
 
   pe = mu.t - mu.r
   se = sqrt(mse/2 * (1/n1 + 1/n2))   # See pp 62-63 of Chow & Liu
