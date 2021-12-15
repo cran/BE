@@ -66,7 +66,7 @@ test2x2 = function(bedata, Var)
   Fv[6] = Fv[7] = MS[7] = NA
 
   ANOVA = cbind(SS, DF, MS, Fv, p)
-  dimnames(ANOVA) = list(Source,c("Sum of Sq", "Df", "Mean Sq", "F value", "p(>F)"))
+  dimnames(ANOVA) = list(Source,c("Sum Sq", "Df", "Mean Sq", "F value", "Pr(>F)"))
   class(ANOVA) = "anova"
 
   pe = mu.t - mu.r
@@ -74,7 +74,7 @@ test2x2 = function(bedata, Var)
   t0 = qt(0.95, n1 + n2 - 2);
   ci0 = cbind(pe - t0 * se, pe, pe + t0 * se)
 
-  sig2b = (MS[3] - MS[6])/2
+  sig2b = max(0, (MS[3] - MS[6])/2)
   sig2w = MS[6]
 
   cvs = cbind(sqrt(exp(sig2b) - 1), sqrt(exp(sig2w) - 1)) * 100

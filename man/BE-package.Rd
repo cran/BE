@@ -20,5 +20,5 @@
 }
 \examples{
 # write.csv(NCAResult4BE, "temp.csv", quote=FALSE, row.names=FALSE)
-# print(be2x2("temp.csv", c("AUClast", "Cmax", "Tmax")), na.print="") 
+# be2x2("temp.csv", c("AUClast", "Cmax", "Tmax"))
 }

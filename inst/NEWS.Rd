@@ -1,6 +1,13 @@
 \name{NEWS}
 \title{News for Package \pkg{BE}}
 
+\section{Version 0.1.5 (2021-12-16)}{
+  \itemize{
+    \item{Asterisks are shown in the ANOVA table}
+    \item(Negative between-subject variance will be shown as 0.)
+  }
+}
+
 \section{Version 0.1.4 (2021-11-16)}{
   \itemize{
     \item{Beutified ANOVA result in test2x2 and be2x2}

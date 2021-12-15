@@ -8,7 +8,7 @@
 be2x2(Data, Columns = c("AUClast", "Cmax", "Tmax"), rtfName="")
 }
 \arguments{
-  \item{Data}{A \code{data.frame} or a file name. This should have at least the following columns and variable column(s) to be tested. AUC and Cmax should be all positive values.
+  \item{Data}{A \code{data.frame} or a csv file name. This should have at least the following columns and variable column(s) to be tested. AUC and Cmax should be all positive values.
 \preformatted{  
  GRP : Group or Sequence, 'RT' or 'TR'
  PRD : Period, 1 or 2
