@@ -1,6 +1,13 @@
 \name{NEWS}
 \title{News for Package \pkg{BE}}
 
+\section{Version 0.1.5 (2022-04-02)}{
+  \itemize{
+    \item{sscv and ssmse return power value as an attribute.}
+    \item(Interval criteria for scaled average BE can be calculated with sabeCrit function)
+  }
+}
+
 \section{Version 0.1.5 (2021-12-16)}{
   \itemize{
     \item{Asterisks are shown in the ANOVA table}
@@ -22,7 +29,7 @@
 
 \section{Version 0.1.2 (2020-09-24)}{
   \itemize{
-    \item{2x3x3 design is supported. See the help of \code{powmse}.}
+    \item{2x2x3 design is supported. See the help of \code{powmse}.}
   }
 }
 

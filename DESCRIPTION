@@ -1,5 +1,5 @@
 Package: BE
-Version: 0.1.5
+Version: 0.2.0
 Title: Bioequivalence Study Data Analysis
 Description: Analyze bioequivalence study data with industrial strength. Sample size could be determined for various crossover designs, such as 2x2 design, 2x4 design, 4x4 design, Balaam design, Two-sequence dual design, and William design.
              Reference: Chow SC, Liu JP. Design and Analysis of Bioavailability and Bioequivalence Studies. 3rd ed. (2009, ISBN:978-1-58488-668-6).
@@ -12,5 +12,5 @@ NeedsCompilation: no
 LazyLoad: yes
 Repository: CRAN
 URL: https://cran.r-project.org/package=BE
-Packaged: 2021-12-16 00:22:49 UTC; Kyun-SeopBae
-Date/Publication: 2021-12-16 00:42:03 UTC
+Packaged: 2022-04-01 15:19:09 UTC; Kyun-SeopBae
+Date/Publication: 2022-04-01 15:40:02 UTC
