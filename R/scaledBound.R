@@ -1,6 +1,6 @@
-scaledBound = function(CV = 40, k=0.76, digits=4)
+scaledBound = function(CV = 40, k = 0.76, digits = 4)
 {
-  if (CV <= 30) return(c(0.8, 1.25))
+  if (CV < 30) return(c(0.8, 1.25))
   if (CV > 50) CV = 50
 
 # SD0 = sqrt(log(1 + (30/100)^2)) # SD0 = 0.2935604

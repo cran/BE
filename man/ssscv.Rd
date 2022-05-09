@@ -1,11 +1,11 @@
 \name{ssscv}
 \alias{ssscv}
-\title{Scaled Average BE - Sample size using coefficient of variation (CV)}
+\title{Sample Size for Scaled Average BE using coefficient of variation (CV)}
 \description{
   It calculates sample size for the scaled average bioequivalence test on ratio using coefficient of variation (CV).
 }
 \usage{
-ssscv(CV, DesignNo = 1, True.R = 1, Alpha = 0.1, Beta = 0.2, nMax = 999999)
+ssscv(CV, DesignNo = 1, True.R = 1, Alpha = 0.1, Beta = 0.2, Region = "EU", nMax = 999999)
 }
 \arguments{
   \item{CV}{Coefficient of Variation (\%)}
@@ -30,16 +30,19 @@ ssscv(CV, DesignNo = 1, True.R = 1, Alpha = 0.1, Beta = 0.2, nMax = 999999)
   \item{True.R}{True ratio of test/reference}
   \item{Alpha}{Alpha error level}
   \item{Beta}{Beta error level}
+  \item{Region}{US or FDA for US FDA, KR or MFDS for Korea MFDS, EU or EMA for other regions or countries}
   \item{nMax}{Maximum subject number (sample size) per group}
 }
 \details{
-  It calculates sample size (n per group) with \code{CV}, \code{Alpha}, and \code{Beta} for scaled average bioequivalence test.
+  It calculates sample size (n per group) with \code{CV}, \code{Alpha}, and \code{Beta} for scaled average bioequivalence test. US FDA uses this widened bound for both AUClast and Cmax, while EU EMA and Korea MFDA use this for Cmax only.
 }
 \value{
   Returns sample size (n per group) for scaled average bioequivalence test with ratio criteria.
 }
 \author{Kyun-Seop Bae <k@acr.kr>}
 \examples{
-ssscv(42.2, DesignNo=4, True.R=0.9) # 14 per group
+ssscv(42.2, DesignNo=4, True.R=0.9) # 14 per group, EU EMA. This applies only for Cmax
+ssscv(42.2, DesignNo=4, True.R=0.9, Region="US") # 9 per group, US FDA
+ssscv(42.2, DesignNo=4, True.R=0.9, Region="KR") # 14 per group, Korea MFDS. Only for Cmax
 }
 \keyword{Sample Size}

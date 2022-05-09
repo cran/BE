@@ -1,10 +1,16 @@
 \name{NEWS}
 \title{News for Package \pkg{BE}}
 
-\section{Version 0.1.5 (2022-04-02)}{
+\section{Version 0.2.1 (2022-05-02)}{
+  \itemize{
+    \item(sssCV and scaledBound for scaled average BE now support US FDA criteria.)
+  }
+}
+
+\section{Version 0.2.0 (2022-04-02)}{
   \itemize{
     \item{sscv and ssmse return power value as an attribute.}
-    \item(Interval criteria for scaled average BE can be calculated with sabeCrit function)
+    \item(Interval criteria for scaled average BE can be calculated with scaledBound function)
   }
 }
 
