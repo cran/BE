@@ -1,6 +1,12 @@
 \name{NEWS}
 \title{News for Package \pkg{BE}}
 
+\section{Version 0.2.2 (2022-08-05)}{
+  \itemize{
+    \item(Too low power or too large sample size are reported better.)
+  }
+}
+
 \section{Version 0.2.1 (2022-05-02)}{
   \itemize{
     \item(sssCV and scaledBound for scaled average BE now support US FDA criteria.)
