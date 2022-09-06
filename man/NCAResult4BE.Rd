@@ -11,7 +11,7 @@
 NCAResult4BE
 }
 \format{
-  A data frame with 48 observations on the following 10 variables.
+  A data frame with 66 observations on the following 7variables.
   \describe{
     \item{\code{SUBJ}}{Subject ID}
     \item{\code{GRP}}{Group or Sequence character code: 'RT' or 'TR"}

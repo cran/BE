@@ -1,7 +1,7 @@
-dc3ba80ed2e1f9feb6e751aa1083c7a9 *DESCRIPTION
+b604c7fea1b487e87d34f710b1749ab9 *DESCRIPTION
 f34c843d99273d79ded4edb6e3273c00 *NAMESPACE
 34645dba9f3f107c66ae1d147b28c13c *R/BasicUtil.R
-759c8e70b9c385acd59bb04f50270285 *R/be2x2.R
+ccfddcbf7c2df558ea8af286ed1f50be *R/be2x2.R
 31431a9d5c5984214266217484de0fb6 *R/ci2cv.R
 16dfd030b52f0307cad2a4599fd3c886 *R/ci2mse.R
 6f3cdf06da9f08a077760b631430554b *R/cv2mse.R
@@ -21,11 +21,11 @@ a7f0363a11650fdbadd406f40cba4151 *R/scaledBound.R
 f6fa857e230fc5da1f35494a82ba1d34 *R/ssscv.R
 ab4b4f1071a6f90bee249d82a5e4ecf4 *R/sysdata.rda
 60e088087f7790918f45f813a6ac34b4 *R/test2x2.R
-5c7e2bd7865a94b33b257f36b1ab4495 *inst/NEWS.Rd
-7aedf8c5e34323dc63760bdcefad5b0e *inst/doc/BE-manual.pdf
+c43d8076025b380bd01b54d5eb278c0b *inst/NEWS.Rd
+f62eda6875a8dae543a0edff904ac9e7 *inst/doc/BE-manual.pdf
 12f563cf1f7b3219d2ac64701d4bfa44 *man/BE-package.Rd
 bd2c483e742fb8b40658574693f171b2 *man/BasicUtil.Rd
-eca1691be7238f847f615b727ff4ba0d *man/NCAResult4BE.Rd
+a52b1869098e8e88dfea652d759cd7cf *man/NCAResult4BE.Rd
 cc2c70896a81344117d26098404070c3 *man/be2x2.Rd
 5c2bc31bb9e97ff663e6f51198b0b5f1 *man/ci2cv.Rd
 77c940eaf082f8438dd72a1a259f7763 *man/ci2mse.Rd

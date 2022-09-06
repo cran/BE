@@ -1,29 +1,36 @@
 \name{NEWS}
 \title{News for Package \pkg{BE}}
 
-\section{Version 0.2.2 (2022-08-05)}{
+\section{Version 0.2.3 (2022-09-07)}{
   \itemize{
-    \item(Too low power or too large sample size are reported better.)
+    \item{Some quotation mark UTF-8 characters in the rtf file are changed to ASCII code}
+    \item{Some typo fixed}
+  }
+}
+
+\section{Version 0.2.2 (2022-08-08)}{
+  \itemize{
+    \item{Too low power or too large sample size are reported better.}
   }
 }
 
 \section{Version 0.2.1 (2022-05-02)}{
   \itemize{
-    \item(sssCV and scaledBound for scaled average BE now support US FDA criteria.)
+    \item{sssCV and scaledBound for scaled average BE now support US FDA criteria.}
   }
 }
 
 \section{Version 0.2.0 (2022-04-02)}{
   \itemize{
     \item{sscv and ssmse return power value as an attribute.}
-    \item(Interval criteria for scaled average BE can be calculated with scaledBound function)
+    \item{Interval criteria for scaled average BE can be calculated with scaledBound function}
   }
 }
 
 \section{Version 0.1.5 (2021-12-16)}{
   \itemize{
     \item{Asterisks are shown in the ANOVA table}
-    \item(Negative between-subject variance will be shown as 0.)
+    \item{Negative between-subject variance will be shown as 0.}
   }
 }
 

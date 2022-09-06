@@ -1,5 +1,7 @@
 be2x2 = function(Data, Columns = c("AUClast", "Cmax", "Tmax"), rtfName="")
 {
+#  oLocale = Sys.setlocale(category="LC_ALL","English.utf8")
+#  on.exit(Sys.setlocale(category="LC_ALL", oLocale))
   if ("data.frame" %in% class(Data)) {
     bedata = Data
   } else if ("character" %in% class(Data)) {
@@ -53,6 +55,10 @@ be2x2 = function(Data, Columns = c("AUClast", "Cmax", "Tmax"), rtfName="")
     addPageBreak(rtf)
     addSessionInfo(rtf)
     done(rtf)
+    fRTF = readLines(rtfName)
+    iL = grep("Signif. codes:  0", fRTF)
+    fRTF[iL] = "Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\\par}"
+    writeLines(fRTF, rtfName)
   }
 
   names(Result) = Columns
