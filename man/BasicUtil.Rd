@@ -1,5 +1,6 @@
 \name{BasicUtil}
 \alias{assert}
+\alias{TrimData}
 \alias{drawind}
 \alias{drawmeansd}
 \title{Internal Functions}

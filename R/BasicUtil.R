@@ -5,7 +5,19 @@ assert = function(bedata)
   Si12 = bedata[bedata$GRP=="TR" & bedata$PRD==1, "SUBJ"]
   Si22 = bedata[bedata$GRP=="TR" & bedata$PRD==2, "SUBJ"]
 
+  nameCheck = setdiff(c("GRP", "SUBJ", "PRD", "TRT"), colnames(bedata))
+  if (length(nameCheck) > 0) stop("GRP, SUBJ, PRD, TRT columns should exist!")
+
   return(identical(Si11, Si21) & identical(Si12, Si22))
+}
+
+TrimData = function(bedata)
+{
+  bedata$GRP = trimws(bedata$GRP)
+  bedata$SUBJ = trimws(bedata$SUBJ)
+  bedata$PRD = trimws(bedata$PRD)
+  bedata$TRT = trimws(bedata$TRT)
+  return(bedata)
 }
 
 drawind = function(g1l, g1r, g2l, g2r, g1s, g2s)

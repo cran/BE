@@ -4,6 +4,7 @@ test2x2 = function(bedata, Var)
     cat("\n Subject count should be balanced!\n");
     return(NULL);
   }
+  bedata = TrimData(bedata)
 
   Yijk = log(bedata[, Var])
   Yi11 = log(bedata[bedata$GRP=="RT" & bedata$PRD==1, Var])

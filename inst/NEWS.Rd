@@ -1,6 +1,12 @@
 \name{NEWS}
 \title{News for Package \pkg{BE}}
 
+\section{Version 0.2.4 (2022-12-28)}{
+  \itemize{
+    \item{trimws is used for the input data.frame}
+  }
+}
+
 \section{Version 0.2.3 (2022-09-07)}{
   \itemize{
     \item{Some quotation mark UTF-8 characters in the rtf file are changed to ASCII code}

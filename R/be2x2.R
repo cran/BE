@@ -15,7 +15,8 @@ be2x2 = function(Data, Columns = c("AUClast", "Cmax", "Tmax"), rtfName="")
     cat("\n Subject count should be balanced!\n");
     return(NULL);
   }
-
+  bedata = TrimData(bedata)
+  
   nCol = length(Columns)
   if (nCol == 0) stop("Input Error. Please, check the arguments!")
 
